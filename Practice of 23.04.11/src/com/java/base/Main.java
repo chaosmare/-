@@ -8,7 +8,7 @@ public class Main {
 		// 선언문 
 		
 		Scanner scanner = new Scanner(System.in);
-		int scoa = 0, scob = 0, scoc = 0, ave = 0;
+		int scoa, scob, scoc, ave = scanner.nextInt();
 		String resa = "", resb = "", resc = "";
 		
 		System.out.println("A의 점수를 입력하세요. ");
@@ -18,12 +18,15 @@ public class Main {
 		System.out.println("C의 점수를 입력하세요. ");
 		scoc = scanner.nextInt();
 		
+		
+		// 0~100 사이의 숫자를 기입안했을 경우 
 		if(scoa <= 100 || scoa <= 0 || scob <= 100 || scob <= 0 || scoc <= 100 || scoc <= 0) {
 			System.out.println("잘못된 1~99 사이 숫자를 입력하세요. ");
 		}
 		else {
 			ave = (scoa + scob + scoc) / 3;
 			System.out.println("평균점수 :" + ave);}
+		
 		// A의 점수 if
 		if ( scoa < ave ) {
 			resa = "A점수는 평균 이하입니다. ";}
@@ -46,7 +49,7 @@ public class Main {
 		else {
 			resc = "C점수는 평균입니다. ";}
 		
-		
+		System.out.println("점수가" + ave + "여서" + );
 		
 		
 				
